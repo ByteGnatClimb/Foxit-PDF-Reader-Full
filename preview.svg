@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="450" viewBox="0 0 1200 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#100202"/>
+      <stop offset="50%" stop-color="#1C0505"/>
+      <stop offset="100%" stop-color="#100202"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#DC2626"/>
+      <stop offset="100%" stop-color="#F87171"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="450" fill="url(#bg)"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="6" height="450" fill="url(#redGrad)"/>
+
+  <!-- Left: PDF document mockup -->
+  <rect x="40" y="45" width="280" height="360" rx="4" fill="#1A0808" stroke="#DC2626" stroke-width="1.5"/>
+  <!-- PDF header red bar -->
+  <rect x="40" y="45" width="280" height="40" rx="4" fill="#DC2626" opacity="0.3"/>
+  <rect x="40" y="70" width="280" height="15" fill="#DC2626" opacity="0.3"/>
+  <!-- Page fold corner -->
+  <polygon points="280,45 320,45 320,85 280,85" fill="#1A0808"/>
+  <polygon points="280,45 320,85 280,85" fill="#DC2626" opacity="0.2"/>
+
+  <!-- Page content lines (simulated text) -->
+  <g fill="#CCCCCC" opacity="0.12" rx="2">
+    <rect x="58" y="100" width="200" height="8" rx="2"/>
+    <rect x="58" y="116" width="180" height="8" rx="2"/>
+    <rect x="58" y="132" width="195" height="8" rx="2"/>
+    <rect x="58" y="148" width="160" height="8" rx="2"/>
+  </g>
+  <!-- Highlighted text -->
+  <rect x="58" y="164" width="220" height="10" rx="2" fill="#FFD700" opacity="0.25"/>
+  <g fill="#CCCCCC" opacity="0.12">
+    <rect x="58" y="182" width="200" height="8" rx="2"/>
+    <rect x="58" y="198" width="175" height="8" rx="2"/>
+  </g>
+  <!-- Annotation box -->
+  <rect x="58" y="218" width="215" height="35" rx="3" fill="none" stroke="#DC2626" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="66" y="233" font-family="monospace" font-size="9" fill="#F87171">Review note: approve</text>
+  <text x="66" y="247" font-family="monospace" font-size="9" fill="#F87171">final section changes</text>
+
+  <g fill="#CCCCCC" opacity="0.12">
+    <rect x="58" y="262" width="190" height="8" rx="2"/>
+    <rect x="58" y="278" width="205" height="8" rx="2"/>
+    <rect x="58" y="294" width="170" height="8" rx="2"/>
+  </g>
+  <!-- Signature line -->
+  <line x1="58" y1="330" x2="200" y2="330" stroke="#DC2626" stroke-width="1" opacity="0.5"/>
+  <text x="60" y="345" font-family="monospace" font-size="9" fill="#DC2626" opacity="0.6">Digitally signed  ✓</text>
+  <!-- Page number -->
+  <text x="220" y="390" font-family="monospace" font-size="11" fill="#666666">1 / 24</text>
+
+  <!-- Divider -->
+  <line x1="345" y1="30" x2="345" y2="420" stroke="#DC2626" stroke-width="1.5" opacity="0.35"/>
+
+  <!-- Right: Title and comparison -->
+  <text x="385" y="95" font-family="'Arial', sans-serif" font-size="60" font-weight="bold" fill="url(#redGrad)" filter="url(#glow)" letter-spacing="2">Foxit PDF</text>
+  <text x="387" y="140" font-family="'Arial', sans-serif" font-size="44" font-weight="bold" fill="url(#redGrad)" opacity="0.7" letter-spacing="2">Reader</text>
+  <text x="390" y="170" font-family="monospace" font-size="13" fill="#DC2626" opacity="0.7" letter-spacing="1">FAST  ·  LIGHTWEIGHT  ·  FULL-FEATURED  ·  FREE</text>
+
+  <!-- Key stats pills -->
+  <rect x="390" y="190" width="100" height="32" rx="16" fill="#DC2626" opacity="0.2" stroke="#DC2626" stroke-width="1"/>
+  <text x="440" y="211" font-family="monospace" font-size="12" fill="#F87171" text-anchor="middle">78 MB</text>
+
+  <rect x="503" y="190" width="110" height="32" rx="16" fill="#DC2626" opacity="0.2" stroke="#DC2626" stroke-width="1"/>
+  <text x="558" y="211" font-family="monospace" font-size="12" fill="#F87171" text-anchor="middle">Opens &lt; 1s</text>
+
+  <rect x="626" y="190" width="130" height="32" rx="16" fill="#DC2626" opacity="0.2" stroke="#DC2626" stroke-width="1"/>
+  <text x="691" y="211" font-family="monospace" font-size="12" fill="#F87171" text-anchor="middle">No background svc</text>
+
+  <rect x="769" y="190" width="90" height="32" rx="16" fill="#DC2626" opacity="0.2" stroke="#DC2626" stroke-width="1"/>
+  <text x="814" y="211" font-family="monospace" font-size="12" fill="#44FF88" text-anchor="middle">Free</text>
+
+  <!-- Comparison table -->
+  <text x="390" y="252" font-family="monospace" font-size="11" fill="#DC2626" opacity="0.6">vs ADOBE ACROBAT READER</text>
+  <line x1="517" y1="246" x2="1145" y2="246" stroke="#DC2626" stroke-width="1" opacity="0.15"/>
+
+  <g font-family="monospace" font-size="12">
+    <!-- Headers -->
+    <text x="390" y="268" fill="#888888">Feature</text>
+    <text x="650" y="268" fill="#F87171">Foxit</text>
+    <text x="790" y="268" fill="#888888">Adobe Free</text>
+    <text x="960" y="268" fill="#888888">Adobe Pro</text>
+    <line x1="390" y1="274" x2="1145" y2="274" stroke="#DC2626" stroke-width="1" opacity="0.1"/>
+
+    <text x="390" y="292" fill="#CCCCCC">PDF annotation tools</text>
+    <text x="650" y="292" fill="#44FF88">✓ Full</text>
+    <text x="790" y="292" fill="#AAAAAA">Partial</text>
+    <text x="960" y="292" fill="#AAAAAA">✓ Full</text>
+
+    <text x="390" y="311" fill="#CCCCCC">Text editing in PDF</text>
+    <text x="650" y="311" fill="#44FF88">✓</text>
+    <text x="790" y="311" fill="#FF6666">✗</text>
+    <text x="960" y="311" fill="#AAAAAA">✓</text>
+
+    <text x="390" y="330" fill="#CCCCCC">OCR (scan to text)</text>
+    <text x="650" y="330" fill="#44FF88">✓</text>
+    <text x="790" y="330" fill="#FF6666">✗</text>
+    <text x="960" y="330" fill="#AAAAAA">✓ ($)</text>
+
+    <text x="390" y="349" fill="#CCCCCC">Install size</text>
+    <text x="650" y="349" fill="#44FF88">78 MB</text>
+    <text x="790" y="349" fill="#FF8888">830 MB</text>
+    <text x="960" y="349" fill="#FF8888">900 MB</text>
+
+    <text x="390" y="368" fill="#CCCCCC">Startup time</text>
+    <text x="650" y="368" fill="#44FF88">&lt; 1 sec</text>
+    <text x="790" y="368" fill="#FF8888">4–8 sec</text>
+    <text x="960" y="368" fill="#FF8888">5–10 sec</text>
+
+    <text x="390" y="387" fill="#CCCCCC">Background services</text>
+    <text x="650" y="387" fill="#44FF88">None</text>
+    <text x="790" y="387" fill="#FF8888">AcroTray + ARM</text>
+    <text x="960" y="387" fill="#FF8888">Multiple</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="415" width="1200" height="35" fill="#DC2626" opacity="0.07"/>
+  <line x1="0" y1="415" x2="1200" y2="415" stroke="#DC2626" stroke-width="1" opacity="0.3"/>
+  <text x="30" y="437" font-family="monospace" font-size="12" fill="#DC2626" opacity="0.6">Foxit PDF Reader 2025  ·  78 MB  ·  Sub-second load  ·  Annotation · OCR · Signatures · Forms  ·  Free</text>
+</svg>
